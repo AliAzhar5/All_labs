@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hockey</title>
+    </head>
+    <body>
+        <header>
+            <h1>Hockey</h1>
+        </header>
+
+        <p>
+            Hockey is a team sport played on a field or on an indoor rink, where two teams compete to score goals by hitting a small, hard ball into the opposing team's goal using a hockey stick.
+        </p>
+
+        <table>
+            <tr>
+                <th><h3>Field Hockey</h3></th>
+                <th><h3>Ice Hockey</h3></th>
+            </tr>
+        
+            <td>
+                <ul>
+                    <li>Played on a field</li>
+                    <li>Played on grass or artificial turf</li>
+                    <li>11 players per team</li>
+                    <li>3 forwards, 3 midfielders, 3 defenders, 1 goalkeeper</li>
+                    <li>Game duration: 70 minutes (two halves of 35 minutes each)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Played on an indoor rink</li>
+                    <li>Played on ice</li>
+                    <li>6 players per team</li>
+                    <li>3 forwards, 2 defenders, 1 goalkeeper</li>
+                    <li>Game duration: 60 minutes (three periods of 20 minutes each)</li>
+                </ul>
+            </td>
+        </table>
+
+        <h2>Field Hockey</h2>
+        <canvas id="hockeyField" width="400" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById("hockeyField");
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.rect(0, 0, 400, 200);
+            ctx.fillStyle = "green";
+            ctx.fill();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "white";
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(200, 100, 50, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(0, 100);
+            ctx.lineTo(400, 100);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "white";
+            ctx.stroke();
+        </script>
+        
+
+        <h2>Some Best Goals</h2>
+        <video width="320" height="240" controls>
+            <source src="hockey_goals.mp4" type="video/mp4">
+        </video>
+    </body>
+</html>
