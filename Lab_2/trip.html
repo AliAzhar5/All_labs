@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plan</title>
+    </head>
+    <body>
+        <h1>Plan Your Trip</h1>
+        <mark>Book your trip to Alii today!</mark>
+        <p>Fill out the form below to book your trip to Alii.</p>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="trip">Trip:</label>
+            <select id="trip" name="trip">
+                <option value="Bora Bora">Bora Bora</option>
+                <option value="Maui">Maui</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Bali">Bali</option>
+            </select><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            
+            <label for="duration">Duration:</label>
+            <input type="radio" id="duration" name="duration" value="3 days">
+            <label for="3 days">3 days</label>
+            <input type="radio" id="duration" name="duration" value="7 days">
+            <label for="7 days">7 days</label>
+            <input type="radio" id="duration" name="duration" value="14 days">
+            <label for="14 days">14 days</label><br><br>
+            
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" max="10"><br><br>
+            
+            <label for="type">Type of Trip:</label>
+            <input type="radio" id="type" name="type" value="Family">
+            <label for="Family">Family</label>
+            <input type="radio" id="type" name="type" value="Friends">
+            <label for="Friends">Friends</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
