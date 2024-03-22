@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    background-color: gray;
+    color: #fff;
+    padding: 10px;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.left-section,
+.right-section {
+    grid-column: span 6;
+}
+
+.left-section {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.right-section {
+    padding-left: 10px;
+}
+
+.left-section h2,
+.right-section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.left-section ul,
+.right-section ul {
+    padding: 0;
+    margin: 0;
+}
+
+.left-section li,
+.right-section li {
+    margin-bottom: 10px;
+}
